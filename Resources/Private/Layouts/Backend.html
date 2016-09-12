@@ -1,0 +1,37 @@
+<f:comment>
+    The f:be.container renders most of the stuff in the html <head>.
+    Most importand includes are the backend.css and .js
+    If you use AjaxRoutes, you have to use this ViewHelper.
+</f:comment>
+
+<f:be.container>
+    <div class="module" data-module-id="" data-module-name="">
+        <div class="module-docheader t3js-module-docheader">
+            <div class="module-docheader-bar module-docheader-bar-navigation t3js-module-docheader-bar t3js-module-docheader-bar-navigation">
+                <div class="module-docheader-bar-column-left">
+
+                </div>
+                <div class="module-docheader-bar-column-right">
+
+                </div>
+            </div>
+            <div class="module-docheader-bar module-docheader-bar-buttons t3js-module-docheader-bar t3js-module-docheader-bar-buttons">
+                <div class="module-docheader-bar-column-left">
+                    <f:render section="LeftToolBar"/>
+                </div>
+                <div class="module-docheader-bar-column-right">
+                    <f:render section="RightToolBar"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="module-body t3js-module-body" style="padding-top: 89px;">
+            <f:render section="Welcome"/>
+
+            <f:flashMessages/>
+
+            <f:render section="Main"/>
+        </div>
+
+    </div>
+</f:be.container>

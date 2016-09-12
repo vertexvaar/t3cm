@@ -1,0 +1,30 @@
+{namespace core = TYPO3\CMS\Core\ViewHelpers}
+<f:layout name="Backend"/>
+
+<f:section name="LeftToolBar">
+    <f:comment>
+        You can use the link.action ViewHelper to create links to other actions/controllers/extensions.
+        If you want more look'n'feel then just use the IconRegistry/API and the icon ViewHelper to render them.
+        Add the classes "btn btn-default" to your link to make it look really nice.
+
+        I personally dislike the extbase actions dropdown menu that is/was created by the extension_builder, because
+        it has UI drawbacks.
+    </f:comment>
+
+    <f:link.action class="btn btn-default" action="gewaschen">
+        <core:icon identifier="actions-selection-delete"/> sjdhfgs
+    </f:link.action>
+</f:section>
+
+<f:section name="RightToolBar">
+
+</f:section>
+
+<f:section name="Welcome">
+
+</f:section>
+
+<f:section name="Main">
+    <h1>TYPO3 Rulez</h1>
+    {hello}
+</f:section>
